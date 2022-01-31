@@ -10,3 +10,7 @@ damier:
     path: /damier
     controller: App\Controller\DemoController::damier
 
+addMessage:
+    path: /addMessage
+    controller: App\Controller\DemoController::addMessage
+

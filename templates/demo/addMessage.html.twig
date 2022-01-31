@@ -1,0 +1,53 @@
+{% extends 'demo/base.html.twig' %}
+
+{% block title %}
+    DAMIER
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .blanc
+        {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+        .noir
+        {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h1> votre message </h1>
+    
+
+    {{ form_start(formulaire) }}
+        <div class="input-field col s12 m6 l6">
+                {{ form_label(formulaire.name, null, {'label_attr': {'class': 'jp_label'}}) }}
+                {{ form_widget(formulaire.name,      {'attr':       {'placeholder': 'prenom'}}) }}
+        </div>
+        <hr>
+        <div class="input-field col s12 m6 l6">
+                {{ form_label(formulaire.message, null, {'label_attr': {'class': 'jp_label'}}) }}
+                {{ form_widget(formulaire.message, {'attr': {'placeholder': 'profession'}}) }}
+        </div>
+
+        <div ></div>
+        <button type="submit" >ENREGISTRER</button>
+    {{ form_end(formulaire) }}
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+

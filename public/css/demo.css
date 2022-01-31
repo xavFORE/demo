@@ -1,0 +1,21 @@
+body
+{
+    background-color : blue;
+}
+.bande-haut
+{
+    background-image : url('https://lautreestuneecole.fr/wp-content/uploads/2017/11/bandeau-oiseau-dans-ciel.jpg');
+    height : 120px;
+    width: 90%;
+    border-radius: 20px;
+}
+.bande-bas
+{
+    position: absolute;
+    bottom: 30px;
+    height: 100px;
+    width: 90%;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
